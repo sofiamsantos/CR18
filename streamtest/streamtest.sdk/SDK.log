@@ -1,0 +1,43 @@
+19:54:06 INFO  : Registering command handlers for SDK TCF services
+19:54:09 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Sofs\Documents\Projeto\streamtest\streamtest.sdk\temp_xsdb_launch_script.tcl
+19:54:15 INFO  : XSCT server has started successfully.
+19:54:23 INFO  : Successfully done setting XSCT server connection channel  
+19:54:23 INFO  : Successfully done setting SDK workspace  
+19:54:23 INFO  : Processing command line option -hwspec C:/Users/Sofs/Documents/Projeto/streamtest/streamtest.sdk/design_1_wrapper.hdf.
+20:10:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:10:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+20:10:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Sofs/Documents/Projeto/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_0/download.bit"
+20:17:18 WARN  : Given IPC port value is invalid. Using default port 2350
+20:17:18 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+20:17:20 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:20 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:23 INFO  : Processor reset is completed for microblaze_0
+20:17:23 ERROR : Port COM3 is already in use.
+20:17:23 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:23 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:23 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:23 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:23 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:24 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:24 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:24 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:43 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:44 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:44 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:44 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:44 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:44 INFO  : Processor reset is completed for microblaze_0
+20:17:44 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:17:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:34:08 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
