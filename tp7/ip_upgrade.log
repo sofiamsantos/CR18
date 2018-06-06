@@ -1,0 +1,178 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 22:49:59 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 21:59:33 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 21:05:30 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 14:48:04 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_SevenDispManager_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'an'
+
+-Upgrade has added port 'dp'
+
+-Upgrade has added port 'seg'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 14:37:03 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 14:29:03 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 14:04:01 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 19 14:01:42 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SevenDispManager_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_SevenDispManager_0_0 (xilinx.com:user:SevenDispManager:1.0 (Rev. 1)) to Vivado generation flows.
+

@@ -1,0 +1,34 @@
+20:03:40 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:10: warning: unused variable 'd3' [-Wunused-variable]
+     char d3;
+          ^~
+../src/helloworld.c:74:10: warning: unused variable 'd2' [-Wunused-variable]
+     char d2;
+          ^~
+../src/helloworld.c:73:10: warning: unused variable 'd1' [-Wunused-variable]
+     char d1;
+          ^~
+../src/helloworld.c:72:10: warning: unused variable 'd0' [-Wunused-variable]
+     char d0;
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6540	    320	   3108	   9968	   26f0	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+
+20:03:46 Build Finished (took 6s.98ms)
+
