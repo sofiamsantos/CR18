@@ -1,0 +1,4 @@
+https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-getting-started-with-microblaze/start
+
+
+https://www.xilinx.com/support/documentation/sw_manuals/xilinx2012_3/ug935-vivado-io-clock-planning-tutorial.pdf

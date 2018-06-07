@@ -1,0 +1,6 @@
+07:50:21 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+
+07:50:22 Build Finished (took 993ms)
+
