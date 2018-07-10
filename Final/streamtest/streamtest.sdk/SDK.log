@@ -2068,3 +2068,206 @@ com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
 07:50:26 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
 07:56:27 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
 07:56:27 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:33:29 INFO  : Registering command handlers for SDK TCF services
+18:33:30 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\UA\CR\CR18.git\Final\streamtest\streamtest.sdk\temp_xsdb_launch_script.tcl
+18:33:36 INFO  : XSCT server has started successfully.
+18:33:40 INFO  : Successfully done setting XSCT server connection channel  
+18:33:40 INFO  : Processing command line option -hwspec D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf.
+18:33:40 INFO  : Successfully done setting SDK workspace  
+18:40:16 INFO  : Registering command handlers for SDK TCF services
+18:40:17 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\UA\CR\CR18.git\Final\streamtest\streamtest.sdk\temp_xsdb_launch_script.tcl
+18:40:19 INFO  : XSCT server has started successfully.
+18:40:19 INFO  : Successfully done setting XSCT server connection channel  
+18:40:19 INFO  : Processing command line option -hwspec D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf.
+18:40:20 INFO  : Successfully done setting SDK workspace  
+18:40:20 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+18:53:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:53:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+18:53:31 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+18:54:26 WARN  : Given IPC port value is invalid. Using default port 2350
+18:54:26 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+18:54:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:30 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:30 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:30 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:30 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:30 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:30 INFO  : Processor reset is completed for microblaze_0
+18:54:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:32 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:54:32 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+18:56:05 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:06:38 INFO  : Registering command handlers for SDK TCF services
+19:06:38 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\UA\CR\CR18.git\Final\streamtest\streamtest.sdk\temp_xsdb_launch_script.tcl
+19:06:41 INFO  : XSCT server has started successfully.
+19:06:41 INFO  : Successfully done setting XSCT server connection channel  
+19:06:41 INFO  : Successfully done setting SDK workspace  
+19:06:41 INFO  : Processing command line option -hwspec D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf.
+19:06:42 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+19:07:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:07:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+19:07:24 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+19:07:28 WARN  : Given IPC port value is invalid. Using default port 2350
+19:07:29 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+19:07:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:31 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:33 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:33 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:33 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:33 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:33 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:33 INFO  : Processor reset is completed for microblaze_0
+19:07:34 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:34 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:34 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:34 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:34 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:34 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:35 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:07:35 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:23:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+19:23:46 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+19:23:52 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:52 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:52 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:52 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:52 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:52 INFO  : Processor reset is completed for microblaze_0
+19:23:53 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:53 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:53 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:53 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:53 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:23:53 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:42:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:42:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+19:42:45 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+19:43:00 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:43:00 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:43:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:43:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+19:43:28 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+19:44:11 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:11 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:12 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:12 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:12 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:12 INFO  : Processor reset is completed for microblaze_0
+19:44:12 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:12 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:13 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:13 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:13 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:44:13 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:14 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:14 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:48:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+19:48:40 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+19:48:44 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:44 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:45 INFO  : Processor reset is completed for microblaze_0
+19:48:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:48:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:50:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:50:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:50:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:51:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+19:51:02 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+19:51:05 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:05 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:05 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:05 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:05 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:05 INFO  : Processor reset is completed for microblaze_0
+19:51:06 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:06 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:06 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:06 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:06 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:06 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:16 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+19:51:16 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:13:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+22:13:32 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+22:23:38 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:41 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:41 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:41 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:41 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:41 INFO  : Processor reset is completed for microblaze_0
+22:23:42 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:42 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:42 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:42 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:42 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:23:42 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:24:39 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:24:39 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:24:39 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:24:39 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:33:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+22:33:26 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+22:33:33 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:36 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:36 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:36 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:36 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:36 INFO  : Processor reset is completed for microblaze_0
+22:33:36 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:37 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:37 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:37 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:37 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:33:37 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:34:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:34:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:34:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:34:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+22:34:54 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+22:35:16 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:19 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:19 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:19 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:19 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:19 INFO  : Processor reset is completed for microblaze_0
+22:35:19 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:20 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:20 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:20 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:20 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:35:20 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:36:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504829A" && level==0} -index 0' command is executed.
+22:36:39 INFO  : FPGA configured successfully with bitstream "D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_1/download.bit"
+22:36:42 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:42 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:36:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:45 INFO  : Processor reset is completed for microblaze_0
+22:36:45 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:36:46 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:39:54 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+22:39:55 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+00:11:58 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

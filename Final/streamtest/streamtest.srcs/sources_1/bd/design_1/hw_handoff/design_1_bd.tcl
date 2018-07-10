@@ -259,7 +259,7 @@ proc create_root_design { parentCell } {
  ] $clk_100MHz
   set reset [ create_bd_port -dir I -type rst reset ]
   set_property -dict [ list \
-   CONFIG.POLARITY {ACTIVE_HIGH} \
+   CONFIG.POLARITY {ACTIVE_LOW} \
  ] $reset
 
   # Create instance: StreamCopIPCore_0, and set properties
@@ -323,6 +323,10 @@ proc create_root_design { parentCell } {
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0 ]
+  set_property -dict [ list \
+   CONFIG.RESET_PORT {resetn} \
+   CONFIG.RESET_TYPE {ACTIVE_LOW} \
+ ] $clk_wiz_0
 
   # Create instance: fit_timer_0, and set properties
   set fit_timer_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fit_timer:2.0 fit_timer_0 ]
@@ -421,7 +425,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]
   connect_bd_net -net fit_timer_0_Interrupt [get_bd_pins fit_timer_0/Interrupt] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/mb_debug_sys_rst]
-  connect_bd_net -net reset_rtl_0_0_1 [get_bd_ports reset] [get_bd_pins clk_wiz_0/reset] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+  connect_bd_net -net reset_rtl_0_0_1 [get_bd_ports reset] [get_bd_pins clk_wiz_0/resetn] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
   connect_bd_net -net rst_clk_wiz_1_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/bus_struct_reset]
   connect_bd_net -net rst_clk_wiz_1_100M_interconnect_aresetn [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins rst_clk_wiz_1_100M/interconnect_aresetn]
   connect_bd_net -net rst_clk_wiz_1_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]

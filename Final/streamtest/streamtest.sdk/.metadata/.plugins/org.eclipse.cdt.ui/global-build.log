@@ -6617,3 +6617,570 @@ make: Nothing to be done for `all'.
 07:50:21 **** Incremental Build of configuration Debug for project io_tester ****
 make all 
 make: Nothing to be done for `all'.
+18:43:33 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:424:25: error: 'N' undeclared (first use in this function)
+     for (i = 0; i < 4 * N; i = i + 4)
+                         ^
+../src/helloworld.c:424:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:414:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^~~~~~
+make: *** [src/helloworld.o] Error 1
+18:44:02 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:416:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15792	   1360	   3168	  20320	   4f60	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+18:54:25 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+19:07:28 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+19:23:19 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:603:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:598:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:543:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25236	   1420	   3240	  29896	   74c8	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:23:51 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+19:39:56 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'transformHand':
+../src/helloworld.c:258:5: warning: statement with no effect [-Wunused-value]
+  key<<1;
+  ~~~^~~
+../src/helloworld.c:262:6: warning: statement with no effect [-Wunused-value]
+   key<<4
+   ~~~^~~
+../src/helloworld.c:263:3: error: expected ';' before 'key'
+   key = key & player[i].color;
+   ^~~
+../src/helloworld.c:264:6: warning: statement with no effect [-Wunused-value]
+   key<<1;
+   ~~~^~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:619:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:614:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:559:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+make: *** [src/helloworld.o] Error 1
+19:40:05 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'transformHand':
+../src/helloworld.c:258:5: warning: statement with no effect [-Wunused-value]
+  key<<1;
+  ~~~^~~
+../src/helloworld.c:262:6: warning: statement with no effect [-Wunused-value]
+   key<<4;
+   ~~~^~~
+../src/helloworld.c:264:6: warning: statement with no effect [-Wunused-value]
+   key<<1;
+   ~~~^~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:619:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:614:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:559:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+../src/helloworld.c: In function 'transformHand':
+../src/helloworld.c:257:6: warning: 'key' is used uninitialized in this function [-Wuninitialized]
+  key = key & player[0].color;
+  ~~~~^~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25248	   1420	   3236	  29904	   74d0	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:40:21 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'transformHand':
+../src/helloworld.c:258:5: warning: statement with no effect [-Wunused-value]
+  key<<1;
+  ~~~^~~
+../src/helloworld.c:262:6: warning: statement with no effect [-Wunused-value]
+   key<<4;
+   ~~~^~~
+../src/helloworld.c:264:6: warning: statement with no effect [-Wunused-value]
+   key<<1;
+   ~~~^~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:619:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:614:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:559:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25248	   1420	   3236	  29904	   74d0	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:40:39 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:619:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:614:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:559:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25248	   1420	   3236	  29904	   74d0	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:42:19 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:621:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:616:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:561:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25624	   1420	   3236	  30280	   7648	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:44:11 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+19:48:04 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:621:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:616:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:561:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25624	   1420	   3236	  30280	   7648	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:48:44 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+19:50:19 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:621:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:616:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:561:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25404	   1420	   3240	  30064	   7570	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:50:29 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:622:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:617:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:562:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25448	   1420	   3236	  30104	   7598	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+19:51:04 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+22:05:00 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:621:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:616:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:561:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25620	   1420	   3240	  30280	   7648	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:10:58 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:623:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:618:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+../src/helloworld.c:563:11: warning: unused variable 'tmp' [-Wunused-variable]
+      char tmp;
+           ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25668	   1420	   3240	  30328	   7678	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:11:34 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:623:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:618:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25668	   1420	   3240	  30328	   7678	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:12:00 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:622:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:617:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25668	   1420	   3240	  30328	   7678	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:12:53 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'transformHand':
+../src/helloworld.c:270:26: error: 'v' undeclared (first use in this function)
+  xil_printf("\n\rO:%08x",v);
+                          ^
+../src/helloworld.c:270:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:622:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:617:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+make: *** [src/helloworld.o] Error 1
+22:13:05 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:622:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:617:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25668	   1420	   3240	  30328	   7678	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:23:37 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+22:32:40 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:626:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:621:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25276	   1420	   3240	  29936	   74f0	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:33:32 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+22:34:14 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:631:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:626:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25368	   1420	   3236	  30024	   7548	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:35:15 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.
+22:36:12 **** Auto Build of configuration Debug for project io_tester ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../io_tester_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:631:9: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   idx = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR) - 48;
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:626:8: warning: variable 'lixo' set but not used [-Wunused-but-set-variable]
+   char lixo;
+        ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: io_tester.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_tester_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io_tester.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io_tester.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io_tester.elf  |tee "io_tester.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25764	   1420	   3240	  30424	   76d8	io_tester.elf
+'Finished building: io_tester.elf.size'
+' '
+22:36:42 **** Incremental Build of configuration Debug for project io_tester ****
+make all 
+make: Nothing to be done for `all'.

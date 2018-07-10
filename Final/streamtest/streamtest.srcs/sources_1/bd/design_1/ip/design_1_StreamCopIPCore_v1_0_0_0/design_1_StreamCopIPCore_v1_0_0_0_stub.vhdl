@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Mon Jun  4 18:03:57 2018
--- Host        : DESKTOP-CV3V2L5 running 64-bit major release  (build 9200)
+-- Date        : Mon Jul  9 18:13:44 2018
+-- Host        : Gingerbread running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Sofs/Documents/Projeto/streamtest/streamtest.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_v1_0_0_0/design_1_StreamCopIPCore_v1_0_0_0_stub.vhdl
+--               D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_v1_0_0_0/design_1_StreamCopIPCore_v1_0_0_0_stub.vhdl
 -- Design      : design_1_StreamCopIPCore_v1_0_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

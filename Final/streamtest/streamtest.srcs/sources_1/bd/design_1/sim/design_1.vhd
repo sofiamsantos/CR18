@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
---Date        : Wed Jun  6 22:38:33 2018
---Host        : DESKTOP-CV3V2L5 running 64-bit major release  (build 9200)
+--Date        : Mon Jul  9 18:26:28 2018
+--Host        : Gingerbread running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
 --Purpose     : IP block netlist
@@ -932,10 +932,10 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
   signal NLW_ilmb_v10_LMB_Rst_UNCONNECTED : STD_LOGIC;
   signal NLW_lmb_bram_rsta_busy_UNCONNECTED : STD_LOGIC;
   signal NLW_lmb_bram_rstb_busy_UNCONNECTED : STD_LOGIC;
+  attribute BMM_INFO_ADDRESS_SPACE : string;
+  attribute BMM_INFO_ADDRESS_SPACE of dlmb_bram_if_cntlr : label is "byte  0x00000000 32 > design_1 microblaze_0_local_memory/lmb_bram";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of dlmb_bram_if_cntlr : label is "yes";
-  attribute bmm_info_address_space : string;
-  attribute bmm_info_address_space of dlmb_bram_if_cntlr : label is "byte  0x00000000 32 > design_1 microblaze_0_local_memory/lmb_bram";
 begin
   DLMB_ce <= microblaze_0_dlmb_CE;
   DLMB_readdbus(0 to 31) <= microblaze_0_dlmb_READDBUS(0 to 31);
@@ -2550,10 +2550,10 @@ entity design_1 is
     uart_rtl_0_rxd : in STD_LOGIC;
     uart_rtl_0_txd : out STD_LOGIC
   );
-  attribute core_generation_info : string;
-  attribute core_generation_info of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=30,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=10,da_clkrst_cnt=11,da_mb_cnt=1,synth_mode=OOC_per_IP}";
-  attribute hw_handoff : string;
-  attribute hw_handoff of design_1 : entity is "design_1.hwdef";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=30,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=10,da_clkrst_cnt=11,da_mb_cnt=1,synth_mode=OOC_per_IP}";
+  attribute HW_HANDOFF : string;
+  attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
 
 architecture STRUCTURE of design_1 is
@@ -2700,27 +2700,9 @@ architecture STRUCTURE of design_1 is
     irq : out STD_LOGIC
   );
   end component design_1_axi_intc_1_0;
-  component design_1_StreamCopIPCore_v1_0_0_0 is
-  port (
-    m00_axis_aclk : in STD_LOGIC;
-    m00_axis_aresetn : in STD_LOGIC;
-    m00_axis_tvalid : out STD_LOGIC;
-    m00_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m00_axis_tstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m00_axis_tlast : out STD_LOGIC;
-    m00_axis_tready : in STD_LOGIC;
-    s00_axis_aclk : in STD_LOGIC;
-    s00_axis_aresetn : in STD_LOGIC;
-    s00_axis_tready : out STD_LOGIC;
-    s00_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axis_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axis_tlast : in STD_LOGIC;
-    s00_axis_tvalid : in STD_LOGIC
-  );
-  end component design_1_StreamCopIPCore_v1_0_0_0;
   component design_1_clk_wiz_0_0 is
   port (
-    reset : in STD_LOGIC;
+    resetn : in STD_LOGIC;
     clk_in1 : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
     locked : out STD_LOGIC
@@ -2871,6 +2853,24 @@ architecture STRUCTURE of design_1 is
     Interrupt : out STD_LOGIC
   );
   end component design_1_fit_timer_0_0;
+  component design_1_StreamCopIPCore_v1_0_0_0 is
+  port (
+    m00_axis_aclk : in STD_LOGIC;
+    m00_axis_aresetn : in STD_LOGIC;
+    m00_axis_tvalid : out STD_LOGIC;
+    m00_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m00_axis_tstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m00_axis_tlast : out STD_LOGIC;
+    m00_axis_tready : in STD_LOGIC;
+    s00_axis_aclk : in STD_LOGIC;
+    s00_axis_aresetn : in STD_LOGIC;
+    s00_axis_tready : out STD_LOGIC;
+    s00_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axis_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axis_tlast : in STD_LOGIC;
+    s00_axis_tvalid : in STD_LOGIC
+  );
+  end component design_1_StreamCopIPCore_v1_0_0_0;
   signal StreamCopIPCore_0_m00_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal StreamCopIPCore_0_m00_axis_TLAST : STD_LOGIC;
   signal StreamCopIPCore_0_m00_axis_TREADY : STD_LOGIC;
@@ -3079,33 +3079,33 @@ architecture STRUCTURE of design_1 is
   signal NLW_StreamCopIPCore_0_m00_axis_tstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_axi_uartlite_0_interrupt_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_Interrupt_Ack_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 1 );
+  attribute BMM_INFO_PROCESSOR : string;
+  attribute BMM_INFO_PROCESSOR of microblaze_0 : label is "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of microblaze_0 : label is "yes";
-  attribute bmm_info_processor : string;
-  attribute bmm_info_processor of microblaze_0 : label is "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr";
-  attribute x_interface_info : string;
-  attribute x_interface_info of clk_100MHz : signal is "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk_100MHz : signal is "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN design_1_clk_100MHz, FREQ_HZ 100000000, PHASE 0.000";
-  attribute x_interface_info of reset : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
-  attribute x_interface_parameter of reset : signal is "XIL_INTERFACENAME RST.RESET, POLARITY ACTIVE_HIGH";
-  attribute x_interface_info of uart_rtl_0_rxd : signal is "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD";
-  attribute x_interface_info of uart_rtl_0_txd : signal is "xilinx.com:interface:uart:1.0 uart_rtl_0 TxD";
-  attribute x_interface_info of dual_seven_seg_led_disp_tri_i : signal is "xilinx.com:interface:gpio:1.0 dual_seven_seg_led_disp ";
-  attribute x_interface_info of dual_seven_seg_led_disp_tri_o : signal is "xilinx.com:interface:gpio:1.0 dual_seven_seg_led_disp ";
-  attribute x_interface_info of dual_seven_seg_led_disp_tri_t : signal is "xilinx.com:interface:gpio:1.0 dual_seven_seg_led_disp ";
-  attribute x_interface_info of led_16bit_tri_i : signal is "xilinx.com:interface:gpio:1.0 led_16bit TRI_I";
-  attribute x_interface_info of led_16bit_tri_o : signal is "xilinx.com:interface:gpio:1.0 led_16bit TRI_O";
-  attribute x_interface_info of led_16bit_tri_t : signal is "xilinx.com:interface:gpio:1.0 led_16bit TRI_T";
-  attribute x_interface_info of push_buttons_5bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits ";
-  attribute x_interface_info of push_buttons_5bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits ";
-  attribute x_interface_info of push_buttons_5bits_tri_t : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits ";
-  attribute x_interface_info of seven_seg_led_an_tri_i : signal is "xilinx.com:interface:gpio:1.0 seven_seg_led_an ";
-  attribute x_interface_info of seven_seg_led_an_tri_o : signal is "xilinx.com:interface:gpio:1.0 seven_seg_led_an ";
-  attribute x_interface_info of seven_seg_led_an_tri_t : signal is "xilinx.com:interface:gpio:1.0 seven_seg_led_an ";
-  attribute x_interface_info of switch_16bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 switch_16bits ";
-  attribute x_interface_info of switch_16bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 switch_16bits ";
-  attribute x_interface_info of switch_16bits_tri_t : signal is "xilinx.com:interface:gpio:1.0 switch_16bits ";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of clk_100MHz : signal is "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of clk_100MHz : signal is "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN design_1_clk_100MHz, FREQ_HZ 100000000, PHASE 0.000";
+  attribute X_INTERFACE_INFO of reset : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
+  attribute X_INTERFACE_PARAMETER of reset : signal is "XIL_INTERFACENAME RST.RESET, POLARITY ACTIVE_LOW";
+  attribute X_INTERFACE_INFO of uart_rtl_0_rxd : signal is "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD";
+  attribute X_INTERFACE_INFO of uart_rtl_0_txd : signal is "xilinx.com:interface:uart:1.0 uart_rtl_0 TxD";
+  attribute X_INTERFACE_INFO of dual_seven_seg_led_disp_tri_i : signal is "xilinx.com:interface:gpio:1.0 dual_seven_seg_led_disp TRI_I";
+  attribute X_INTERFACE_INFO of dual_seven_seg_led_disp_tri_o : signal is "xilinx.com:interface:gpio:1.0 dual_seven_seg_led_disp TRI_O";
+  attribute X_INTERFACE_INFO of dual_seven_seg_led_disp_tri_t : signal is "xilinx.com:interface:gpio:1.0 dual_seven_seg_led_disp TRI_T";
+  attribute X_INTERFACE_INFO of led_16bit_tri_i : signal is "xilinx.com:interface:gpio:1.0 led_16bit TRI_I";
+  attribute X_INTERFACE_INFO of led_16bit_tri_o : signal is "xilinx.com:interface:gpio:1.0 led_16bit TRI_O";
+  attribute X_INTERFACE_INFO of led_16bit_tri_t : signal is "xilinx.com:interface:gpio:1.0 led_16bit TRI_T";
+  attribute X_INTERFACE_INFO of push_buttons_5bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits TRI_I";
+  attribute X_INTERFACE_INFO of push_buttons_5bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits TRI_O";
+  attribute X_INTERFACE_INFO of push_buttons_5bits_tri_t : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits TRI_T";
+  attribute X_INTERFACE_INFO of seven_seg_led_an_tri_i : signal is "xilinx.com:interface:gpio:1.0 seven_seg_led_an TRI_I";
+  attribute X_INTERFACE_INFO of seven_seg_led_an_tri_o : signal is "xilinx.com:interface:gpio:1.0 seven_seg_led_an TRI_O";
+  attribute X_INTERFACE_INFO of seven_seg_led_an_tri_t : signal is "xilinx.com:interface:gpio:1.0 seven_seg_led_an TRI_T";
+  attribute X_INTERFACE_INFO of switch_16bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 switch_16bits TRI_I";
+  attribute X_INTERFACE_INFO of switch_16bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 switch_16bits TRI_O";
+  attribute X_INTERFACE_INFO of switch_16bits_tri_t : signal is "xilinx.com:interface:gpio:1.0 switch_16bits TRI_T";
 begin
   axi_gpio_0_GPIO_TRI_I(15 downto 0) <= led_16bit_tri_i(15 downto 0);
   axi_gpio_1_GPIO_TRI_I(15 downto 0) <= switch_16bits_tri_i(15 downto 0);
@@ -3323,7 +3323,7 @@ clk_wiz_0: component design_1_clk_wiz_0_0
       clk_in1 => clk_100MHz_1,
       clk_out1 => clk_wiz_0_clk_out1,
       locked => clk_wiz_0_locked,
-      reset => reset_rtl_0_0_1
+      resetn => reset_rtl_0_0_1
     );
 fit_timer_0: component design_1_fit_timer_0_0
      port map (

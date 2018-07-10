@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
---Date        : Wed Jun  6 22:38:34 2018
---Host        : DESKTOP-CV3V2L5 running 64-bit major release  (build 9200)
+--Date        : Mon Jul  9 18:26:28 2018
+--Host        : Gingerbread running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -33,8 +33,6 @@ architecture STRUCTURE of design_1_wrapper is
     led_16bit_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     led_16bit_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     led_16bit_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    reset : in STD_LOGIC;
-    clk_100MHz : in STD_LOGIC;
     switch_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     switch_16bits_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     switch_16bits_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -46,7 +44,9 @@ architecture STRUCTURE of design_1_wrapper is
     push_buttons_5bits_tri_t : out STD_LOGIC_VECTOR ( 4 downto 0 );
     seven_seg_led_an_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
     seven_seg_led_an_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    seven_seg_led_an_tri_t : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    seven_seg_led_an_tri_t : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    reset : in STD_LOGIC;
+    clk_100MHz : in STD_LOGIC
   );
   end component design_1;
   component IOBUF is

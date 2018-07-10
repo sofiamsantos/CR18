@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Sofs/Documents/Projeto/streamtest/streamtest.runs/synth_1'
+HD_PWD='D:/Documents/UA/CR/CR18.git/Final/streamtest/streamtest.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

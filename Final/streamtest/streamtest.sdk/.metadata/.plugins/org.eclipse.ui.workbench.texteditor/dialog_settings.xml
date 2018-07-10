@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="UART" key="selection"/>
+		<item value="lixo" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="lixo"/>
+			<item value="tmp"/>
+			<item value="struct"/>
 			<item value="uart"/>
 			<item value="recvbyte"/>
 			<item value="recv"/>
 			<item value="XGPIO_IR_CH1_MASK"/>
 			<item value="XGPIO_ISR_OFFSET"/>
-			<item value="TimerIntCallbackHandler"/>
-			<item value="printf"/>
-			<item value="DEE"/>
 		</list>
 		<list key="replacehistory">
 			<item value="xil_printf"/>

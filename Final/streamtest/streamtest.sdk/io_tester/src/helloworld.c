@@ -65,6 +65,8 @@
 
 #define NUM_PIECES 16
 
+#define N 16
+
 //-------------------------------------------------------------------------------------------
 
 struct piece
@@ -250,6 +252,25 @@ void showHand(struct piece player[], size_t n, int showHidden){
 	}
 }
 
+unsigned int transformHand(struct piece player[], size_t n){
+	unsigned int key = 0;
+
+	key = key | player[0].num;
+	key = key<<1;
+	key = key | player[0].color;
+	for (int i = 1; i < n; ++i)
+	{
+		if(player[i].num == 9)
+			break;
+		key = key<<3;
+		key = key | player[i].num;
+		key = key<<1;
+		key = key | player[i].color;
+	}
+	//xil_printf("\n\rO:%08x",key);
+	return key;
+}
+
 //----- FUNCTIONS ---------------------------------------------------------------------------
 
 void TimerIntCallbackHandler(void *CallbackRef) // Will be called at every timer output event
@@ -412,10 +433,25 @@ int SetupInterrupts(u32 IntcBaseAddress)
 int main()
 {
 	int status;
-
+	unsigned int binaryhand, sortedhand;
 	init_platform();
 
 	xil_printf("Welcome to basic I/O, Timer and IRQ demo\n\r");
+
+//	unsigned int i, v, r;
+//
+//	xil_printf("\n\rHello Stream Coprocessor\n\r");
+//
+//	for (i = 0; i < 4 * N; i = i + 4)
+//	{
+//		v = i | ((i+1)<<8)| ((i+2)<<16) | ((i+3)<<24);
+//		xil_printf("\n\rO:%08x",v);
+//		putfsl(v, 0);
+//		getfsl(r, 0);
+//		xil_printf("\n\rR:%08x", r);
+//	}
+//
+//	xil_printf("\n\rDone!");
 
 	/*
 	 * Enable output ports tri-state buffers
@@ -495,9 +531,11 @@ int main()
 	stopHammerTime = 1;
 
 	top = NUM_PIECES-1;
+
+
 	shuffle(deck, NUM_PIECES-1);
 	xil_printf("Shuffled\n");
-	printDeck(deck, NUM_PIECES);
+	//printDeck(deck, NUM_PIECES);
 
 	// deal hand for both players
 	for (int i = 0; i < 3; ++i)
@@ -510,7 +548,12 @@ int main()
 
 	//xil_printf("player 1\n");
 	bubbleSort(player1, NUM_PIECES/2);
-	//printDeck(player1, NUM_PIECES/2);
+	printDeck(player1, NUM_PIECES/2);
+	binaryhand= transformHand(player1, NUM_PIECES/2);
+	xil_printf("\n\rO:%08x",binaryhand);
+	putfsl(binaryhand, 0);
+	getfsl(sortedhand, 0);
+	xil_printf("\n\rO:%08x",sortedhand);
 
 	//xil_printf("player 2\n");
 	bubbleSort(player2, NUM_PIECES/2);
@@ -521,7 +564,6 @@ int main()
 
     while (1)
     {
-    	char tmp;
     	for (int var = 0; var < 8; ++var) {
     		displays[var] = 9;
     		color[var] 	= 0;
@@ -549,6 +591,11 @@ int main()
 				player1[p1idx] = drawPiece;
 				p1idx++;
 				bubbleSort(player1, NUM_PIECES/2);
+				binaryhand= transformHand(player1, NUM_PIECES/2);
+				xil_printf("\n\rO:%08x",binaryhand);
+				putfsl(binaryhand, 0);
+				getfsl(sortedhand, 0);
+				xil_printf("\n\rO:%08x",sortedhand);
 			}else{
 				player2[p2idx] = drawPiece;
 				p2idx++;
