@@ -1,0 +1,21 @@
+23:17:38 **** Build of configuration Debug for project teste ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../teste_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: teste.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../teste_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "teste.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: teste.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size teste.elf  |tee "teste.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2384	    308	   3108	   5800	   16a8	teste.elf
+'Finished building: teste.elf.size'
+' '
+
+23:17:45 Build Finished (took 6s.944ms)
+

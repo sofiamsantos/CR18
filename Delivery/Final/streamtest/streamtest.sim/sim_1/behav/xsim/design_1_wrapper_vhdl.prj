@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../streamtest.srcs/sources_1/new/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
+"../../../../streamtest.srcs/sources_1/new/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
+"../../../../streamtest.srcs/sources_1/new/StreamCopIPCore_v1_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_axi_intc_1_0/sim/design_1_axi_intc_1_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_StreamCopIPCore_v1_0_0_0/sim/design_1_StreamCopIPCore_v1_0_0_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_1/sim/design_1_axi_gpio_0_1.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_2/sim/design_1_axi_gpio_0_2.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_3/sim/design_1_axi_gpio_0_3.vhd" \
+"../../../../streamtest.ip_user_files/bd/design_1/ip/design_1_fit_timer_0_0/sim/design_1_fit_timer_0_0.vhd" \
+"../../../../streamtest.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

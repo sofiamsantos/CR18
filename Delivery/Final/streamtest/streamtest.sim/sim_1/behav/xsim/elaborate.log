@@ -1,0 +1,20 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f0b83821412a4938b497565f8c029792 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_StreamCopIPCore_v1_0_behav xil_defaultlib.tb_StreamCopIPCore_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.StreamCopIPCore_v1_0_S00_AXIS [streamcopipcore_v1_0_s00_axis_de...]
+Compiling architecture implementation of entity xil_defaultlib.StreamCopIPCore_v1_0_M00_AXIS [streamcopipcore_v1_0_m00_axis_de...]
+Compiling architecture structural of entity xil_defaultlib.StreamCopIPCore_v1_0 [streamcopipcore_v1_0_default]
+Compiling architecture tb of entity xil_defaultlib.tb_streamcopipcore_v1_0
+Built simulation snapshot tb_StreamCopIPCore_v1_0_behav

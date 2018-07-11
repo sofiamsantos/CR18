@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../streamtest.srcs/sources_1/new/StreamCopIPCore_v1_0.vhd" \
+"../../../../streamtest.srcs/sources_1/new/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
+"../../../../streamtest.srcs/sources_1/new/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
+"../../../../streamtest.srcs/sim_1/new/test1.vhd" \
+
+# Do not sort compile order
+nosort
