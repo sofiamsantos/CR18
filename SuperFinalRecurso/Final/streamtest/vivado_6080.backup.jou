@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jul 11 18:49:08 2018
+# Process ID: 6080
+# Current directory: D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11044 D:\Documents\UA\CR\CR18.git\Delivery\Final\streamtest\streamtest.xpr
+# Log file: D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/vivado.log
+# Journal file: D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {151.636}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.runs/impl_1/design_1_wrapper.sysdef D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk -hwspec D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf
+update_module_reference design_1_StreamCopIPCore_v1_0_0_0
+update_module_reference design_1_StreamCopIPCore_v1_0_0_0
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {10} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {15.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {78.125} CONFIG.CLKOUT1_JITTER {290.478} CONFIG.CLKOUT1_PHASE_ERROR {133.882}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.runs/impl_1/design_1_wrapper.sysdef D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk -hwspec D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {151.636} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.runs/impl_1/design_1_wrapper.sysdef D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk -hwspec D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper.hdf

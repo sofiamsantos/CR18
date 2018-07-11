@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Wed Jul 11 19:48:48 2018
+# Process ID: 6804
+# Current directory: d:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2017.4/scripts/updatemem/main.tcl -notrace -tclargs -meminfo D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.mmi -data C:/Xilinx/SDK/2017.4/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit -out D:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/streamtest.sdk/design_1_wrapper_hw_platform_3/download.bit -force
+# Log file: d:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest/updatemem.log
+# Journal file: d:/Documents/UA/CR/CR18.git/Delivery/Final/streamtest\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2017.4/scripts/updatemem/main.tcl -notrace
